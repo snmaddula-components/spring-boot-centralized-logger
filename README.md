@@ -1,4 +1,4 @@
-# spring-boot-centralized-logger
+# Centralized Logging in Spring Boot Microservices
 Centralized logger implementation for spring boot microservices
 
 
