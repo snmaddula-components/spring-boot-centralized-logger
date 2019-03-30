@@ -62,7 +62,7 @@ class AppLoggingConfig {
 
 					@Override
 					protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-						return exludedPaths.stream().anyMatch(p -> PATH_MATCHER.match(p, request.getServletPath()));
+						return exludedPaths != null && exludedPaths.stream().anyMatch(p -> PATH_MATCHER.match(p, request.getServletPath()));
 					}
 				});
 			}
