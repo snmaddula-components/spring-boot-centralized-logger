@@ -17,6 +17,6 @@ import org.springframework.context.annotation.Import;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Import({ LoggingAspect.class, AppLoggingConfig.class })
-public @interface EnableCentralizedLogger {
+public @interface EnableCentralizedLogging {
 
 }
